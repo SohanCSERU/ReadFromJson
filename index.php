@@ -58,7 +58,6 @@ if(file_exists('books.json')){
                 <?php foreach ($data as $key => $obj) : ?>
                     
                     <tr class="table-row">
-                        
                         <td>
                             <?php echo ($key+1);?>
                         </td>
