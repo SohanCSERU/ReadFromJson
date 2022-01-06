@@ -72,7 +72,7 @@ if(file_exists('books.json')){
                         <td class="table-item"><?php echo $obj['isbn']; ?></td>
                         <td>
                             <a href="<?php echo 'delete.php?'.'id='. ($key+1); ?>" >
-                                <button class="delete-btn">Delete</button>
+                                <button class="delete-btn" onclick="return confirm('Are you sure you want to delete this item?');">Delete</button>
                             </a>
                         </td>
                     </tr>

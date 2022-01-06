@@ -17,7 +17,7 @@
         $exits_content = array();
     }
 
-    echo "Hello";
+
     if($exits_content !== $fileContents){
         file_put_contents("books.json", $fileContents);        
     }

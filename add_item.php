@@ -35,7 +35,7 @@ if (isset($_GET['title'])) {
 <head>
     <meta charset="UTF-8">
     <title>Add Books</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="/" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 </head>
@@ -50,6 +50,10 @@ if (isset($_GET['title'])) {
     <br>
 
     <div class="container">    
+        <a href="index.php" class="" style="justify-content:center";>
+            <button class="btn btn-primary    ">HOME</button>
+        </a>
+
         <form action="" method="get">   
             
                 <div class="form-group ">
