@@ -11,7 +11,7 @@ if (file_exists('books.json')) {
 
 if (isset($_GET['title'])) {
     $data = array(
-        'id' => $_GET['id'],
+        // 'id' => $_GET['id'],
         'title' => htmlspecialchars($_GET['title']),
         'author' => $_GET['author'],
         'available' => $_GET['available'] === "true",
@@ -49,17 +49,20 @@ if (isset($_GET['title'])) {
     <br>
     <br>
 
-    <div class="container">    
-        <a href="index.php" class="" style="justify-content:center";>
-            <button class="btn btn-primary    ">HOME</button>
-        </a>
+    <div class="container"> 
+        <div style="justify-content:center;">
+            <a href="index.php" class="" >
+                <button class="btn btn-primary    ">HOME</button>
+            </a>    
+        </div>   
+        
 
         <form action="" method="get">   
             
-                <div class="form-group ">
+                <!-- <div class="form-group ">
                     <label for="ID">ID</label>
                     <input type="" class="form-control" name="id" placeholder="Books ID">
-                </div>
+                </div> -->
 
               <div class="form-group ">
                 <label for="title">Books Title</label>

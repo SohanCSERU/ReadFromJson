@@ -60,7 +60,7 @@ if(file_exists('books.json')){
                     <tr class="table-row">
                         
                         <td>
-                            <?php echo $obj['id'];?>
+                            <?php echo ($key+1);?>
                         </td>
                         <td class="table-item">
                             <a>
@@ -79,7 +79,7 @@ if(file_exists('books.json')){
                 <?php endforeach; ?>
                 
             </table>
-            <a href="add_item.php">
+            <a href="add_item.php" >
                 <button class="w-btn">Add Books</button>
             </a>
         </div>

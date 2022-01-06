@@ -22,8 +22,9 @@
 // $numbers = json_decode($numbers_db,true);
 
 foreach($text as $key => $obj){
-    if($obj['id']==$book_id){
-        unset($text[$key]);
+    // if($obj['id']==$book_id){
+        if($key+1==$book_id){
+            unset($text[$key]);
     }
 }
 
